@@ -51,6 +51,14 @@ rm file.txt           # delete file
 rm -r folder/         # delete folder (careful)
 mkdir new_folder      # create folder
 touch file.txt        # create empty file
+cat file.txt          # view the contents of the file
+```
+**Writing messages in terminal or in files**
+```sh
+echo "message"               # Write message in terminal
+echo "message" > file.txt    # Write message in file.txt
+echo "message" >> file.txt   # Append message to end of file.txt
+nano filename                # Open file in a mini text editor (it takes some learning to figure out how to use)
 ```
 
 
