@@ -3,6 +3,11 @@ Useful commands and things for hipergator
 
 ## Contents
 
+- [SSHing in from an external computer](#sshing-in-from-an-external-computer)
+- [Submit job](#submit-job)
+- [Checking useage](#checking-useage)
+- [General commands](#general-commands)
+  
 ## SSHing in from an external computer
 
 ## Submit job
