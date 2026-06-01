@@ -1,6 +1,8 @@
 # HiPeRgAtOr commands
 Useful commands and things for hipergator
 
+For an example phits run, click [here](example_file.md)
+
 ## Contents
 
 - [SSHing in from an external computer](#sshing-in-from-an-external-computer)
