@@ -11,9 +11,9 @@ This test works as of June 1, 2026
 
 
 ## Inputs:
-- [test.job](#test.job)
-- [phits.in](#phits.in)
-- [input.inp](#input.inp)
+- [test.job](#test_job)
+- [phits.in](#phits_in)
+- [input.inp](#input_inp)
 
 **Expected outputs:**
 - e1_xz.eps
