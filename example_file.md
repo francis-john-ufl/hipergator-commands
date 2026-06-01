@@ -1,5 +1,7 @@
 # Test files to work on HiperGator
 
+For example commands, click [here](README.md)
+
 Running:
 ```sh
 sbatch test.job
