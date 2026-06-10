@@ -9,6 +9,7 @@ For an example phits run, click [here](example_file.md)
 - [Submit job](#submit-job)
 - [Checking useage](#checking-useage)
 - [General commands](#general-commands)
+- [Notes](#notes)
   
 ## SSHing in from an external computer
 
@@ -62,6 +63,10 @@ echo "message" > file.txt    # Write message in file.txt
 echo "message" >> file.txt   # Append message to end of file.txt
 nano filename                # Open file in a mini text editor (it takes some learning to figure out how to use)
 ```
+
+
+## Notes
+- Max wall time for bolch-b is 4 days aka `4-00:00:00`
 
 
 <!--
