@@ -18,8 +18,11 @@ This test works as of June 1, 2026
 **Expected outputs:**
 - e1_xz.eps
 - e1_xz.out
+- e1_xz_err.eps
+- e1_xz_err.out
 - phits.out
 - temp.out
+- batch.out
 - test_john_<id>.log
 
 # Files
@@ -30,11 +33,11 @@ This test works as of June 1, 2026
 #SBATCH --job-name=test_john
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user=<francis.john@ufl.edu>
-#SBATCH --ntasks=8
+#SBATCH --ntasks=1
 #SBATCH --nodes=1
-#SBATCH --cpus-per-task=1
+#SBATCH --cpus-per-task=8
 #SBATCH --mem-per-cpu=400mb
-#SBATCH --time=11:00:00
+#SBATCH --time=4-00:00:00
 #SBATCH --output=test_john_%j.log
 #SBATCH --account=bolch
 #SBATCH --qos=bolch-b
@@ -61,15 +64,17 @@ file=input.inp
 
 ## input.inp
 ```
+$OMP=0
+
 [title]
 Exercise 1: Co-60 sphere
 
 [parameters]
-icntl = 8
-maxcas = 1
-maxbch = 1
+icntl = 0
+maxcas = 100
+maxbch = 100
 e-mode = 1
-nucdata=0
+nucdata = 0
 file(1) = /blue/bolch/itar/phits335
 emin(2) = 20
 
@@ -89,7 +94,7 @@ $ 2.5 radius sphere
 
 $ 5 cm cube
 $ Note: It's 10 cm away from the sphere on the z axis
-20 rpp -2.5 2.5 -2.5 2.5 12.5 17.5 
+20 rpp -2.5 2.5 -2.5 2.5 12.5 17.5
 
 $ universe
 999 rpp -3 3 -3 3 -3 20
@@ -137,5 +142,6 @@ title=track xz
 file=e1_xz.out
 gshow=1
 epsout=1
+
 ```
 
