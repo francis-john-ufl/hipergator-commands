@@ -38,7 +38,7 @@ scancel -u username
 ```
 **Show job info**
 ```sh
-scontrol show job <job id>
+scontrol show job JOBID
 ```
 
 ## General commands
