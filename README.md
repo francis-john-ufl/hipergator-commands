@@ -1,4 +1,4 @@
-# HiPeRgAtOr commands
+# HiperGator Commands
 Useful commands and things for hipergator
 
 For an example phits run, click [here](example_file.md)
@@ -35,6 +35,10 @@ scancel JOBID
 **Cancel all your jobs**
 ```sh
 scancel -u username
+```
+**Show job info**
+```sh
+scontrol show job <job id>
 ```
 
 ## General commands
